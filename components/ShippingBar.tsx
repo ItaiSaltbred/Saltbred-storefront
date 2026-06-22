@@ -7,10 +7,8 @@ export default function ShippingBar() {
   const [cartTotal, setCartTotal] = useState(0)
 
   useEffect(() => {
-    fetch('/api/cart')
-      .then(r => r.json())
-      .then(data => setCartTotal(data.total || 0))
-      .catch(() => {})
+    // Cart total will be wired to Shopify once Storefront API is connected
+    setCartTotal(0)
   }, [])
 
   const pct = Math.min(100, Math.round((cartTotal / THRESHOLD) * 100))
