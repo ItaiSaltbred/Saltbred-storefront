@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 
 const LOGO = 'https://cdn.shopify.com/s/files/1/0957/6051/5348/files/high_res_saltbred.png?v=1761073199'
